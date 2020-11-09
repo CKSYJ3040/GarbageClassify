@@ -1,0 +1,26 @@
+<view class="bg">
+
+  <view>
+    <block wx:if="{{flag2}}">
+      <view class="imgbg">
+        <image src="{{upimg}}" class="img"></image>
+      </view>
+      <view class="loading">
+           正在识别中。。。{{percent}}%
+      </view>
+
+    </block>
+    <block wx:else>
+      <view class="bg2">
+        <view class="imgbg">
+          <image src="{{imgSrc}}" class="img"></image>
+        </view>
+        <view class="rst">{{rst}}</view>
+        <view class="resb">
+          <button type="primary" bindtap="reshibie">重新识别</button>
+        </view>
+      </view>
+
+    </block>
+  </view>
+</view>
